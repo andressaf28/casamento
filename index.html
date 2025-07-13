@@ -1,91 +1,137 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Casamento Andressa & Aparecido</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Entre mil possibilidades, escolhemos viver o nosso amor.</h1>
-  </header>
-
-  <section id="contador">
-    <h2>Faltam</h2>
-    <div id="countdown">
-      <span id="dias"></span>d
-      <span id="horas"></span>h
-      <span id="minutos"></span>m
-      <span id="segundos"></span>s
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="countdown.css" />
+  </head>
+  <body>
+    <!--Container-->
+    <div class="container">
+      <div class="all">
+        <!--header-->
+        <header id="home">
+          <div class="heading">
+            <h1>Jane & John</h1>
+            <h2>Are getting married</h2>
+            <h2>17.07.2017</h2>
+          </div>
+          <!--end header-->
+        </header>
+        <div class="countdown-container">
+          <div class="countdown-box">
+            <ul class="countdown-list">
+              <li class="countdown-item"><span class="countdown-num" id="days"></span>days</li>
+              <li class="countdown-item"><span class="countdown-num" id="hours"></span>Hours</li>
+              <li class="countdown-item"><span class="countdown-num" id="minutes"></span>Minutes</li>
+              <li class="countdown-item"><span class="countdown-num" id="seconds"></span>Seconds</li>
+            </ul>
+          </div>
+        </div>
+        <!--start section1-->
+        <section class="start">
+          <!--part Jane And John-->
+          <div class="two" id="us">
+            <h3>Jane & John</h3>
+            <img src="https://www.w3schools.com/w3images/wedding_couple2.jpg" />
+            <p>
+              <i
+                >You all know us. And we all know you. We are getting married
+                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.</i
+              >
+            </p>
+            <button class="black">
+              <a href="#wedding" class="dif">Wedding Details</a>
+            </button>
+          </div>
+          <div class="ofCourse">
+            <div class="heading">
+              <h1>You Are Invited</h1>
+              <h2>Of course..</h2>
+            </div>
+          </div>
+          <div class="two" id="wedding">
+            <h3>THE WEDDING</h3>
+            <img
+              src="https://www.w3schools.com/w3images/wedding_location.jpg"
+            />
+          </div>
+          <div class="content">
+            <div class="whenWhere">
+              <h2>When</h2>
+              <p>Wedding Ceremony - 2:00pm</p>
+              <p>Reception & Dinner - 5:00pm</p>
+            </div>
+            <div class="whenWhere">
+              <h2>Where</h2>
+              <p>Some place, an address</p>
+              <p>Some where, some address</p>
+            </div>
+          </div>
+          <!--end section1-->
+        </section>
+        <!--start section2-->
+        <section class="second">
+          <div class="beforEnd">
+            <h1>HOPE YOU CAN MAKE IT!</h1>
+            <p>Kindly Respond By January, 2017</p>
+            <button id="appear">RSVP</button>
+          </div>
+          <!--end section2-->
+        </section>
+      </div>
+      <!--box modal-->
+      <div class="ok">
+        <div id="box" class="animated zoomIn">
+          <h1>CAN YOU COME?</h1>
+          <p>We really hope you can make it.</p>
+          <form>
+            <input type="text" placeholder="Name(s)" name="name" />
+          </form>
+          <p><i>Sincerely, John & Jane</i></p>
+          <div id="disappear">
+            <div class="green">
+              <button class="one">Going</button>
+            </div>
+            <div class="red">
+              <button class="another">Can't come</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--navbar bottom-->
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#us">Jane & John</a>
+        <a href="#wedding">Wedding</a>
+        <a href="#appear" class="del">RSVP</a>
+      </nav>
+      <!--end container-->
     </div>
-  </section>
-
-  <section id="historia">
-    <h2>Nossa História</h2>
-    <p>Nos conhecemos de um jeito bem inesperado: jogando League of Legends.
-    Mesmo morando a mais de 700 km de distância, começamos a conversar, jogar juntos e,
-    antes que percebêssemos, já estávamos conectados não só pelo jogo, mas pelo coração.
-    Em outubro, nos encontramos pela primeira vez e iniciamos nosso namoro.
-    Anos depois, em uma viagem inesquecível para Toronto, com uma folha de maple nas mãos,
-    veio o pedido de casamento.
-    Agora, estamos prontos para dar o nosso próximo passo — e queremos você com a gente nesse momento tão especial!</p>
-  </section>
-
-  <section id="galeria">
-    <h2>Galeria</h2>
-    <div class="grid">
-      <img src="https://source.unsplash.com/300x300/?wedding,love" alt="Foto 1"/>
-      <img src="https://source.unsplash.com/300x300/?couple,romantic" alt="Foto 2"/>
-      <img src="https://source.unsplash.com/300x300/?bride,groom" alt="Foto 3"/>
-      <img src="https://source.unsplash.com/300x300/?engagement,ring" alt="Foto 4"/>
-    </div>
-  </section>
-
-  <section id="evento">
-    <h2>Informações do Evento</h2>
-    <p><strong>Data:</strong> 11 de Outubro de 2025</p>
-    <p><strong>Horário:</strong> 17h</p>
-    <p><strong>Local:</strong> Fazenda Vassoural – Itu, SP</p>
-  </section>
-
-  <section id="mapa">
-    <h2>Como Chegar</h2>
-    <iframe src="https://www.google.com/maps?q=Fazenda+Vassoural,+Itu,+SP&output=embed" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
-  </section>
-
-  <section id="rsvp">
-    <h2>Confirme sua presença</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8fBNms9vljugmLl-ZnOmvP6OCHk3tpuKlDqsMf1oriG9lHQ/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-  </section>
-
-  <section id="presentes">
-    <h2>Lista de Presentes</h2>
-    <p>Você pode nos presentear com amor — e, se desejar, também com uma contribuição via Pix 💖</p>
-    <p><strong>Chave Pix:</strong> pix@casamento.com</p>
-  </section>
-
-  <footer>
-    <p>Com amor, Andressa & Aparecido 💕</p>
-  </footer>
-
-  <script>
-    const targetDate = new Date("2025-10-11T17:00:00").getTime();
-    const countdown = () => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-
-      const dias = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const horas = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutos = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const segundos = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementById("dias").innerText = dias;
-      document.getElementById("horas").innerText = horas;
-      document.getElementById("minutos").innerText = minutos;
-      document.getElementById("segundos").innerText = segundos;
-    };
-    setInterval(countdown, 1000);
-  </script>
-</body>
+    <!--footer-->
+    <footer>
+      <p>
+        Powered by<a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="w3.css"
+          target="_blank"
+          class="com"
+        >
+          w3.css</a
+        >
+      </p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="countdown.js"></script>
+  </body>
 </html>
