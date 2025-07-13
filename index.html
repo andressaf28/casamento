@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casamento Andressa & Aparecido</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Entre mil possibilidades, escolhemos viver o nosso amor.</h1>
+  </header>
+
+  <section id="contador">
+    <h2>Faltam</h2>
+    <div id="countdown">
+      <span id="dias"></span>d
+      <span id="horas"></span>h
+      <span id="minutos"></span>m
+      <span id="segundos"></span>s
+    </div>
+  </section>
+
+  <section id="historia">
+    <h2>Nossa História</h2>
+    <p>Nos conhecemos de um jeito bem inesperado: jogando League of Legends.
+    Mesmo morando a mais de 700 km de distância, começamos a conversar, jogar juntos e,
+    antes que percebêssemos, já estávamos conectados não só pelo jogo, mas pelo coração.
+    Em outubro, nos encontramos pela primeira vez e iniciamos nosso namoro.
+    Anos depois, em uma viagem inesquecível para Toronto, com uma folha de maple nas mãos,
+    veio o pedido de casamento.
+    Agora, estamos prontos para dar o nosso próximo passo — e queremos você com a gente nesse momento tão especial!</p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="grid">
+      <img src="https://source.unsplash.com/300x300/?wedding,love" alt="Foto 1"/>
+      <img src="https://source.unsplash.com/300x300/?couple,romantic" alt="Foto 2"/>
+      <img src="https://source.unsplash.com/300x300/?bride,groom" alt="Foto 3"/>
+      <img src="https://source.unsplash.com/300x300/?engagement,ring" alt="Foto 4"/>
+    </div>
+  </section>
+
+  <section id="evento">
+    <h2>Informações do Evento</h2>
+    <p><strong>Data:</strong> 11 de Outubro de 2025</p>
+    <p><strong>Horário:</strong> 17h</p>
+    <p><strong>Local:</strong> Fazenda Vassoural – Itu, SP</p>
+  </section>
+
+  <section id="mapa">
+    <h2>Como Chegar</h2>
+    <iframe src="https://www.google.com/maps?q=Fazenda+Vassoural,+Itu,+SP&output=embed" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
+  </section>
+
+  <section id="rsvp">
+    <h2>Confirme sua presença</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd6P-formulario-exemplo/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+  </section>
+
+  <section id="presentes">
+    <h2>Lista de Presentes</h2>
+    <p>Você pode nos presentear com amor — e, se desejar, também com uma contribuição via Pix 💖</p>
+    <p><strong>Chave Pix:</strong> pix@casamento.com</p>
+  </section>
+
+  <footer>
+    <p>Com amor, Andressa & Aparecido 💕</p>
+  </footer>
+
+  <script>
+    const targetDate = new Date("2025-10-11T17:00:00").getTime();
+    const countdown = () => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      const dias = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutos = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const segundos = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("dias").innerText = dias;
+      document.getElementById("horas").innerText = horas;
+      document.getElementById("minutos").innerText = minutos;
+      document.getElementById("segundos").innerText = segundos;
+    };
+    setInterval(countdown, 1000);
+  </script>
+</body>
+</html>
