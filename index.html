@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,118 +19,128 @@
             <h2>estão casando!</h2>
             <h2>11.10.2025</h2>
           </div>
-          <!--end header-->
         </header>
+
+        <!-- countdown -->
         <div class="countdown-container">
           <div class="countdown-box">
             <ul class="countdown-list">
-              <li class="countdown-item"><span class="countdown-num" id="days"></span>days</li>
-              <li class="countdown-item"><span class="countdown-num" id="hours"></span>Hours</li>
-              <li class="countdown-item"><span class="countdown-num" id="minutes"></span>Minutes</li>
-              <li class="countdown-item"><span class="countdown-num" id="seconds"></span>Seconds</li>
+              <li class="countdown-item">
+                <span class="countdown-num" id="days"></span> Dias
+              </li>
+              <li class="countdown-item">
+                <span class="countdown-num" id="hours"></span> Horas
+              </li>
+              <li class="countdown-item">
+                <span class="countdown-num" id="minutes"></span> Minutos
+              </li>
+              <li class="countdown-item">
+                <span class="countdown-num" id="seconds"></span> Segundos
+              </li>
             </ul>
           </div>
         </div>
-        <!--start section1-->
-        <section class="start">
-          <!--part Jane And John-->
-          <div class="two" id="us">
-            <h3>A história</h3>
-            <!-- <img src="./images/cover.jpeg" /> -->
+
+        <!-- História -->
+        <section class="start" id="us">
+          <div class="two">
+            <h3>A nossa história</h3>
             <p>
-              <i
-                >Nossa história começou do jeito mais improvável: jogando League of Legends.
-Ele em uma cidade, eu em outra — mais de 700km nos separavam. Mas mesmo à distância, a conexão foi imediata.
-Uma partida ali, uma conversa aqui… e quando nos demos conta, já estávamos esperando ansiosos pela próxima call.
-Nos conhecemos pessoalmente e, logo, já estávamos juntos. Foi leve, foi certo, foi amor.
-Desde então, foram 8 anos dividindo a vida: as conquistas, os desafios, os silêncios confortáveis, os domingos preguiçosos.
-Em 2022, em meio às cores do outono de Toronto, veio o pedido — com uma folha de maple vermelha nas mãos.
-Agora, chegou a hora de dizer esse sim diante de todos que amamos.</i
-              >
+              <i>
+                Nossa história começou do jeito mais improvável: jogando League
+                of Legends. Ele em uma cidade, eu em outra — mais de 700km nos
+                separavam. Mas mesmo à distância, a conexão foi imediata. <br /><br />
+                Uma partida ali, uma conversa aqui… e quando nos demos conta, já
+                estávamos esperando ansiosos pela próxima call. Nos conhecemos
+                pessoalmente e, logo, já estávamos juntos. Foi leve, foi certo,
+                foi amor. <br /><br />
+                Desde então, foram 8 anos dividindo a vida: as conquistas, os
+                desafios, os silêncios confortáveis, os domingos preguiçosos. Em
+                2022, em meio às cores do outono de Toronto, veio o pedido — com
+                uma folha de maple vermelha nas mãos. Agora, chegou a hora de
+                dizer esse sim diante de todos que amamos.
+              </i>
             </p>
             <button class="black">
               <a href="#wedding" class="dif">Detalhes</a>
             </button>
           </div>
-          <div class="ofCourse">
-            <div class="heading">
-              <h1>E você está convidado</h1>
-              <h2>Claro...</h2>
-            </div>
-          </div>
-          <div class="two" id="wedding">
-            <h3>O CASAMENTO</h3>
-            <img
-              src="./images/casamento-no-campo.jpg"
-            />
-          </div>
-          <div class="content">
-            <div class="whenWhere">
-              <h2>Quando</h2>
-              <p>Cerimonia        - 16:00</p>
-              <p>Recepção & Jantar - 18:00</p>
-            </div>
-            <div class="whenWhere">
-              <h2>Onde</h2>
-              <p>Fazenda Vassoral</p>
-              <p>R. Porto Velho, 300</p>
-              <p>Itu - SP</p>
-            </div>
-          </div>
-          <!--end section1-->
         </section>
-        <!--start section2-->
+
+        <!-- convite -->
+        <section class="ofCourse">
+          <div class="heading">
+            <h1>Você está convidado!</h1>
+            <h2>Claro que sim ❤️</h2>
+          </div>
+        </section>
+
+        <!-- Casamento -->
+        <section class="two" id="wedding">
+          <h3>O Casamento</h3>
+          <img src="./images/casamento-no-campo.jpg" alt="Foto de casamento no campo" />
+        </section>
+
+        <!-- detalhes -->
+        <section class="content">
+          <div class="whenWhere">
+            <h2>Quando</h2>
+            <p>Cerimônia – 16:00</p>
+            <p>Recepção & Jantar – 18:00</p>
+          </div>
+          <div class="whenWhere">
+            <h2>Onde</h2>
+            <p>Fazenda Vassoral</p>
+            <p>R. Porto Velho, 300</p>
+            <p>Itu - SP</p>
+          </div>
+        </section>
+
+        <!-- RSVP -->
         <section class="second">
           <div class="beforEnd">
             <h1>Esperamos que consiga ir!</h1>
-            <p>Responder até setembro...</p>
+            <p>Por favor, confirme sua presença até setembro.</p>
             <br />
             <button id="appear">RSVP</button>
           </div>
-          <!--end section2-->
         </section>
       </div>
-      <!--box modal-->
+
+      <!-- modal RSVP -->
       <div class="ok">
         <div id="box" class="animated zoomIn">
-          <h1>CAN YOU COME?</h1>
-          <p>We really hope you can make it.</p>
+          <h1>Você poderá vir?</h1>
+          <p>Esperamos muito que sim 💕</p>
           <form>
-            <input type="text" placeholder="Name(s)" name="name" />
+            <input type="text" placeholder="Nome(s)" name="name" />
           </form>
-          <p><i>Sincerely, John & Jane</i></p>
+          <p><i>Com carinho, Andressa & Aparecido</i></p>
           <div id="disappear">
             <div class="green">
-              <button class="one">Going</button>
+              <button class="one">Confirmar</button>
             </div>
             <div class="red">
-              <button class="another">Can't come</button>
+              <button class="another">Não poderei</button>
             </div>
           </div>
         </div>
       </div>
-      <!--navbar bottom-->
+
+      <!-- navbar -->
       <nav>
         <a href="#home">Home</a>
         <a href="#us">A história</a>
         <a href="#wedding">O Casamento</a>
         <a href="#appear" class="del">RSVP</a>
       </nav>
-      <!--end container-->
     </div>
-    <!--footer-->
+
+    <!-- footer -->
     <footer>
-      <!-- <p>
-        Powered by<a
-          href="https://www.w3schools.com/w3css/default.asp"
-          title="w3.css"
-          target="_blank"
-          class="com"
-        >
-          w3.css</a
-        >
-      </p> -->
+      <p>&copy; 2025 Andressa & Aparecido</p>
     </footer>
+
     <script src="script.js"></script>
     <script src="countdown.js"></script>
   </body>
