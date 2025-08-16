@@ -53,14 +53,23 @@ header {
   font-size: 1.5rem;
   letter-spacing: 2px;
 }
-
-/* imagens */
-.two img {
-  filter: grayscale(50%);
-  border-radius: 1%;
-  max-width: 100%;
-  height: auto; /* mantém proporção */
+/* Seções de texto e imagem (história, casamento etc.) */
+.two {
+  max-width: 800px;   /* largura máxima agradável */
+  margin: 0 auto;     /* centraliza horizontalmente */
+  padding: 20px;
+  text-align: center; /* centraliza o texto */
 }
+
+/* Centraliza a imagem dentro das seções */
+.two img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto; /* centraliza a imagem */
+  border-radius: 10px; /* opcional: arredondar cantos */
+}
+
 
 /* conteúdo em colunas */
 .content {
@@ -135,5 +144,50 @@ footer p,
   nav a {
     padding: 8px 10px;
     font-size: 12px;
+  }
+}
+
+/* Centraliza a seção RSVP */
+.second {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente (se tiver altura) */
+  text-align: center;      /* centraliza o texto */
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 600px;
+  background: #fff;        /* fundo branco */
+}
+
+.ok {
+  display: flex;
+  justify-content: center;
+}
+
+#appear {
+  background-color: #fff;        /* fundo branco */
+  color: #040404;               /* cor do texto */
+  border: 2px solid #070707;    /* borda combinando */
+  padding: 12px 24px;           /* espaço interno */
+  border-radius: 30px;          /* bordas arredondadas */
+  font-size: 18px;              /* tamanho do texto */
+  font-weight: bold;            /* negrito */
+  cursor: pointer;              /* cursor de "mão" */
+  transition: all 0.3s ease;    /* animação suave */
+}
+
+/* efeito hover (quando passa o mouse) */
+#appear:hover {
+  background-color: #000000;
+  color: #fff;
+  transform: scale(1.05);       /* aumenta um pouquinho */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* se quiser estilizar no celular */
+@media (max-width: 768px) {
+  #appear {
+    width: 100%;    /* botão ocupa toda a largura */
+    font-size: 16px;
   }
 }
