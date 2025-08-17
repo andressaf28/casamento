@@ -164,7 +164,7 @@ footer p,
   justify-content: center;
 }
 
-#appear {
+#appear, #gifts-button {
   background-color: #fff;        /* fundo branco */
   color: #040404;               /* cor do texto */
   border: 2px solid #070707;    /* borda combinando */
@@ -177,7 +177,7 @@ footer p,
 }
 
 /* efeito hover (quando passa o mouse) */
-#appear:hover {
+#appear:hover, #gifts-button:hover {
   background-color: #000000;
   color: #fff;
   transform: scale(1.05);       /* aumenta um pouquinho */
@@ -190,4 +190,50 @@ footer p,
     width: 100%;    /* botão ocupa toda a largura */
     font-size: 16px;
   }
+}
+
+.gift-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.gift-btn {
+  background-color: #fff;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.gift-btn:hover {
+  background-color: #000000;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.pix {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #000000;
+  color: #fff;
 }
